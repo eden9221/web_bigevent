@@ -20,8 +20,6 @@ $(function () {
                 if (res.status !== 0) {
                     return layui.layer.msg('获取用户信息失败！')
                 }
-
-                console.log(res.data);
                 form.val('formUserInfo', res.data)
             },
         })
